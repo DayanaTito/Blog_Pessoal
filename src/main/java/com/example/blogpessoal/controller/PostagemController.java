@@ -1,4 +1,4 @@
-package com.example.blogpessoal.cotroller;
+package com.example.blogpessoal.controller;
 
 import java.util.List;
 

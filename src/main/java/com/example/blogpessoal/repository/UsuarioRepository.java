@@ -1,0 +1,16 @@
+package com.example.blogpessoal.repository;
+
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.example.blogpessoal.model.Usuario;
+
+@Repository
+public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+	
+	// metodo que busca um usuario pelo seu usuario(email)
+	
+	public Optional<Usuario> findByUsuario(String usuario);
+}
